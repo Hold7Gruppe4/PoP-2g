@@ -2,7 +2,7 @@
 type vec = float * float
 
 ///<summary>
-/// Given parameters vectorA and vectorB, this function will add them together and output a new vec.
+/// Given parameters v1 and v2, this function will add them together and output a new vec.
 /// when vectorA = (1.1 , 1.2) and vectorB = (1.3 , 1.5), the output of add will be v3 = (1.4 , 1.7)
 /// </summary> 
 /// <param name = "v1" > A tuple in the type vec. </param>
@@ -36,7 +36,7 @@ let mul (v1:vec) (c:float) : (vec) =
 /// </summary> 
 /// <param name = "v1" > A tuple in the type vec. </param>
 /// <param name = "rc" > A constant, with the datatype float, used to multiply v1. This is given in radians </param>
-/// <returns> The added vector, named v2, which is result of the rotation. Here is the following formula used (rc*v1=(xcos(rc)-ysin(rc),xsin(rc)+ycos(rc))) </param>
+/// <returns> The rotated vector, named v2, which is result of the rotation. Here is the following formula used (rc*v1=(xcos(rc)-ysin(rc),xsin(rc)+ycos(rc))) </param>
 
 
 let rot (v1:vec) (rc:float) : (vec) =
