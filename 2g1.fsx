@@ -149,4 +149,4 @@ let react (S:state) (k:Canvas.key) : state option =
         | _ -> None
 
 
-do runApp "ColorBoxes" w h draw react Start
+do runApp "2g1" w h draw react Start
