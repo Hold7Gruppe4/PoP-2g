@@ -55,12 +55,12 @@ let vectorMUL = vec (1.2 , 1.5)
 let c = 2.0
 //For the rotate function
 let vectorROT = vec (1.2 , 1.5)
-let rc : float = System.Math.PI
+let rc : float = 10.0*System.Math.PI/180.0
 
 //Here are the different calls for the various functions.
-let x = add (vector1ADD) (vector2ADD)
-let z = mul (vectorMUL) (c)
-let p = rot (vectorROT) (rc)
+let A = add (vector1ADD) (vector2ADD)
+let M = mul (vectorMUL) (c)
+let R = rot (vectorROT) (rc)
 
 //Here they are printed. 
-printfn "Add: %A, mul: %A and rot: %A" x z p 
+printfn "Add: %A, mul: %A and rot: %A" A M R
