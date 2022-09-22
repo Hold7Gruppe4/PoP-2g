@@ -45,15 +45,22 @@ let rot (v1:vec) (rc:float) : (vec) =
     let v2 = vec (v2A,v2B)
     v2
 
+//Here are the different parameters, which can be changed in order to calculate the different things.
 
-
-
-let vectorA = vec (1.2 , 1.5)
-let vectorB = vec (1.2 , 1.5)
+//For the add function
+let vector1ADD = vec (1.2 , 1.5)
+let vector2ADD = vec (1.2 , 1.5)
+//For the multiply function
+let vectorMUL = vec (1.2 , 1.5)
 let c = 2.0
+//For the rotate function
+let vectorROT = vec (1.2 , 1.5)
 let rc : float = System.Math.PI
-let x = add (vectorA) (vectorB)
-let z = mul (vectorA) (c)
-let p = rot (vectorA) (rc)
 
-printfn "%A and %A and %A" x z p 
+//Here are the different calls for the various functions.
+let x = add (vector1ADD) (vector2ADD)
+let z = mul (vectorMUL) (c)
+let p = rot (vectorROT) (rc)
+
+//Here they are printed. 
+printfn "Add: %A, mul: %A and rot: %A" x z p 
