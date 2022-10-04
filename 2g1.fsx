@@ -55,7 +55,6 @@ let toInt (vector:vec) : (int * int) =
 
 ///<summary>
 /// Given parameters v1 and v1, this function will add them together and output a new vec.
-/// when v1 = (1.1 , 1.2) and v2 = (1.3 , 1.5), the output of add will be v3 = (1.4 , 1.7)
 /// </summary> 
 /// <param name = "v1" > A tuple in the type vec. </param>
 /// <param name = "v2" > A 2nd tuple in the type vec. </param>
@@ -69,7 +68,6 @@ let add (v1:vec) (pos:vec) : (vec) =
 
 ///<summary>
 /// Given parameters v1 and rc, this function will rotate the v1 based on the radians, given by rc.
-/// when v1 = (1.2 , 1.5) and rc = pi, the output of rotated vec will be v2 = (-1.2 , -1.5), since this is a 180 degrees rotation.
 /// </summary> 
 /// <param name = "v1" > A tuple in the type vec. </param>
 /// <param name = "rc" > A constant, with the datatype float, used to multiply v1. This is given in radians </param>
@@ -84,8 +82,6 @@ let rot (v1:vec) (rc:float) : (vec) =
 ///<summary>
 /// /// Given the parameters canvas, color, vector and position, this function will draw a line, representing the vector, from the pos to the pos plus the vector coordinates.
 /// It will first add the vector and position together in pV (position+vector). Afterwards both the pos and the pV will be converted to ints using the toInt function.
-/// This makes it possible for the function to then set a line from the pos to the pV
-/// If the color is black, the vector is (100 , 0) and the position is (0 , 0) there will be drawn a line from 0,0 to 100,0 on the given canvas
 /// </summary> 
 /// <param name = "C" > A choosen canvas. </param>
 /// <param name = "c" > The color for the line </param>
@@ -110,7 +106,6 @@ let setVector (C:canvas) (c:color) (vector:vec) (pos:vec) =
 /// The draw functions will first create the canvas for the setVector. Then we create a variable vR (vectorRotated), and create a while loop.
 /// This while loop runs 36 times, and each time it will update the vR to be rotated based on the rotating varible s, and which iteration it is in. 
 /// It will draw the line using the setVector function with the current vector and set position.
-/// That means that the first iteration creates a line, and rotates it 10 degrees, and the 2nd one will rotate it 20 degrees
 /// </summary> 
 /// <param name = "w" > the width for the canvas </param>
 /// <param name = "h" > the height for the canvas </param>
